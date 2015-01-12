@@ -1,16 +1,17 @@
 #-------------------------------
-# General Site Settings
+# This file contains configuration flags to customize your site
+#
 
-title: Artists Theme
-description: Thinker // Designer // YouTuber
-email: devtipsfordesigners@gmail.com
+title: AMMOCAN
+description: Designer ✪ Coder ✪ Veteran
+email: ammo@2-Drops.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
-- {name: About Me, url: '#about-me'}
-- {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
+- {name: Scoop, url: '#scoop'}
+- {name: Creations, url: '#creations'}
+- {name: Kudos, url: '#kudos'}
 - {name: Contact, url: '#contact'}
 
 #-------------------------------
@@ -19,89 +20,106 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Provide a description for your website to make it visible to search engines.'
-  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
-  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  description: 'AMMOCAN is a web designer, coder and veteran in Baltimore, MD.'
+  rel-author: 'https://plus.google.com/+AMMOCAN/'
+  rel-publisher: 'https://plus.google.com/+AMMOCAN/'
 
 #-------------------------------
-# About Section
+# Scoop Section
 
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com),
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson)
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners) about making codes happen.
-
+  **AMMOCAN specializes in dropping creativity** back into technology.
+  Most of the things he creates are [more than meets the eye](http://www.2-Drops.com),
+  but he also puts great effort into assisting fellow [vetrepreneurs](http://vet-tech.us)
+  and creating [YouTube tutorials](http://youtube.com/user/2DropsVlog) on ways to be a better web citizen.
 
 skills:
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
+- {name: Passion, value: '10'}
+- {name: Problem Solving, value: '9'}
+- {name: Communication, value: '8'}
+- {name: Diversity, value: '8'}
+- {name: Discipline, value: '9'}
+- {name: Efficiency, value: '8'}
 - {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '5'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
+- {name: Responsibility, value: '9'}
 
 #-------------------------------
-# Work Section
+# Creations Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Crispy Icons, folder: 'proj-3', file: 'work/proj-3.html'}
-- {name: Flat Mobile UI/UX Concept, folder: 'proj-4', file: 'work/proj-4.html'}
-- {name: Fresh It Up, folder: 'proj-5', file: 'work/proj-5.html'}
-- {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
-- {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
-- {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
-
-
-
+- {name: Creation - 1, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: Creation - 2, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Creation - 3, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: Creation - 4, folder: 'proj-4', file: 'work/proj-4.html'}
+- {name: Creation - 5, folder: 'proj-5', file: 'work/proj-5.html'}
+- {name: Creation - 6, folder: 'proj-6', file: 'work/proj-6.html'}
+- {name: Creation - 7, folder: 'proj-7', file: 'work/proj-7.html'}
+- {name: Creation - 8, folder: 'proj-8', file: 'work/proj-8.html'}
 
 #-------------------------------
-# Clients Section
+# Kudos Section
 
 clients:
-- {avatar: 'face-aaroni.jpg',
-  name: 'Scott Summers',
-  title: 'Director of Design, OnToText Ind.',
-  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
+- {avatar: 'face-ryan.jpg',
+  name: 'Ryan Micheletti',
+  title: 'Director of Operations, Vet-Tech',
+  quote: '<p><strong>AMMO</strong> is an excellent designer and developer. He has greatly helped Vet-Tech by creating an Infographic and implementing several website edits. He is now our "go to" person for website and design projects.</p>',
   logo: 'logo1.png'}
-- {avatar: 'face-atariboy.jpg',
-  name: 'Hank McCoy',
-  title: 'Eater of Salad, Antartica Int.',
-  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
+- {avatar: 'face-jay.jpg',
+  name: 'Jay Neighbors',
+  title: 'Creative Director, ignition72',
+  quote: '<p><strong>Working with AMMOCAN</strong> was a pleasure, he has a great work ethic and eye for subtle details. He can handle anything you throw at him plus is a joy to work with, great sense of humor and excellent team player.</p>',
   logo: 'logo2.png'}
-- {avatar: 'face-jackiesaik.jpg',
-  name: 'Stacy Lang',
-  title: 'Social Media Girl, Quebec Int.',
-  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
+- {avatar: 'face-matt.jpg',
+  name: 'Matt McDermott',
+  title: 'Creative Director, idfive',
+  quote: '<p><strong>AMMO</strong> is a passionate professional who understands the value of loyalty and flexibility. While at idfive, he gladly took on any role that we asked of him—a rare thing in an age of self-entitlement and prima donna complexes. From development and research to writing and design, he tackled each with enthusiasm. Articulate and energetic, he has a great deal of potential—and a genuine desire to live up to it. His outgoing personality was a welcome addition to the idfive culture.</p>',
   logo: 'logo3.png'}
-- {avatar: 'face-teleject.jpg',
-  name: 'Cleatus Cassidy',
-  title: 'VP of Helmut, Lorem Sorem LLC.',
-  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
+- {avatar: 'face-steve.jpg',
+  name: 'Steven Stephenson',
+  title: 'Sr. Web Developer, idfive',
+  quote: '<p><strong>AMMOCAN</strong> is a very passionate guy who cares about his craft. He's extremely hard working, friendly and has enough enthusiasm to fill a stadium. Working with him has been a pleasure and hopefully down the line we'll work together again.</p>',
   logo: 'logo4.png'}
-  
-  
+
 #-------------------------------
 # Contact Section
   
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
+- {icon: 'twitter', link: 'http://twitter.com/2DropsTweet'}
+- {icon: 'behance', link: 'https://www.behance.net/ammocan'}
+- {icon: 'youtube', link: 'https://www.youtube.com/2DropsVlog'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/ammocan/'}
 
-  
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble: 
+  email: ammo@2-Drops.com
+  facebook: 
+  flickr: 
+  github: ammocan
+  instagram: 
+  linkedin: ammocan
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: 2DropsTweet
+  stackoverflow: # your stackoverflow profile, e.g. "users/58497/ammo-can"
   
-  
-  
-  
-  
-  
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: 
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-1) to activate tracking
+google_analytics: 
+
+# Your website URL (e.g. http://ammocan.github.io or http://www.ammocan.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://ammocan.github.io
+
+# If you're hosting your site at a Project repository on GitHub pages 
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
