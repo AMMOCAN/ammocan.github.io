@@ -67,7 +67,6 @@ clients:
 - {avatar: 'face-matt.jpg', name: 'Matt McDermott', title: 'Creative Director, idfive', quote: '<p><strong>AMMO is a passionate professional</strong>, who understands the value of loyalty and flexibility. While at idfive, he gladly took on any role that we asked of him—a rare thing in an age of self-entitlement and prima donna complexes. From development and research to writing and design, he tackled each with enthusiasm. Articulate and energetic, he has a great deal of potential—and a genuine desire to live up to it. His outgoing personality was a welcome addition to the idfive culture.</p>', logo: 'logo3.png'}
 - {avatar: 'face-steve.jpg', name: 'Steven Stephenson', title: 'Sr. Web Developer, idfive', quote: '<p><strong>AMMOCAN is a very passionate guy</strong>, who cares about his craft. He is extremely hard working, friendly and has enough enthusiasm to fill a stadium. Working with him has been a pleasure and hopefully down the line we will work together again.</p>', logo: 'logo4.png'}
   
-  
 #-------------------------------
 # Contact Section
   
@@ -77,7 +76,6 @@ social:
 - {icon: 'youtube', link: 'https://www.youtube.com/2DropsVlog'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/ammocan/'}
 
-  
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
   
   
