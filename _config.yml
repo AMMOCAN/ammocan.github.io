@@ -1,13 +1,23 @@
 # Build settings
 
 markdown: kramdown
-permalink: pretty
+highlighter: pygments
+permalink: /:title/
 
-port: 8000
-
-include: ['_includes/work']
-exclude: ['the_design.psd']
-
+# Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: assets/css
-  style: :nested
+  style: :nested # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Include and Exclude these files from your production _site
+include: ['_includes/work']
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
