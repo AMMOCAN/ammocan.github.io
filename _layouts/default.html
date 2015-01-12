@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <meta name="description" content="{{ site.data.settings.seo.description }}"/>
+    <meta name="author" href="{{ site.data.settings.seo.rel-author }}"/>
+    <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"/>
+    
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- Created with Jekyll by AMMOCAN - http://github.com/AMMOCAN -->
+  </head>
+
+  <body>
+
+		{% include header.html %}
+		
+		{% include scoop.html %}
+		
+		{% include creations.html %}
+		
+		{% include kudos.html %}
+		
+		{% include contact.html %}
+		
+		{% include form.html %}
+		
+		{% include footer.html %}
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<!-- REMEMBER TO ADD ANALYTICS! -->
+		{% include analytics.html %}
+		
+  </body>
+
+</html>
