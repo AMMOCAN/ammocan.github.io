@@ -65,25 +65,25 @@ projects:
 # Clients Section
 
 clients:
-- {avatar: 'face-aaroni.jpg',
-  name: 'Scott Summers',
-  title: 'Director of Design, OnToText Ind.',
-  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
+- {avatar: 'face-ryan.jpg',
+  name: 'Ryan Micheletti',
+  title: 'Director of Operations, Vet-Tech',
+  quote: '<p><strong>AMMO</strong> is an excellent designer and developer. He has greatly helped Vet-Tech by creating an Infographic and implementing several website edits. He is now our "go to" person for website and design projects.</p>',
   logo: 'logo1.png'}
-- {avatar: 'face-atariboy.jpg',
-  name: 'Hank McCoy',
-  title: 'Eater of Salad, Antartica Int.',
-  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
+- {avatar: 'face-jay.jpg',
+  name: 'Jay Neighbors',
+  title: 'Creative Director, ignition72',
+  quote: '<p><strong>Working with AMMOCAN</strong> was a pleasure, he has a great work ethic and eye for subtle details. He can handle anything you throw at him plus is a joy to work with, great sense of humor and excellent team player.</p>',
   logo: 'logo2.png'}
-- {avatar: 'face-jackiesaik.jpg',
-  name: 'Stacy Lang',
-  title: 'Social Media Girl, Quebec Int.',
-  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
+- {avatar: 'face-matt.jpg',
+  name: 'Matt McDermott',
+  title: 'Creative Director, idfive',
+  quote: '<p><strong>AMMO</strong> is a passionate professional who understands the value of loyalty and flexibility. While at idfive, he gladly took on any role that we asked of him—a rare thing in an age of self-entitlement and prima donna complexes. From development and research to writing and design, he tackled each with enthusiasm. Articulate and energetic, he has a great deal of potential—and a genuine desire to live up to it. His outgoing personality was a welcome addition to the idfive culture.</p>',
   logo: 'logo3.png'}
-- {avatar: 'face-teleject.jpg',
-  name: 'Cleatus Cassidy',
-  title: 'VP of Helmut, Lorem Sorem LLC.',
-  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
+- {avatar: 'face-steve.jpg',
+  name: 'Steven Stephenson',
+  title: 'Sr. Web Developer, idfive',
+  quote: '<p><strong>AMMOCAN</strong> is a very passionate guy who cares about his craft. He's extremely hard working, friendly and has enough enthusiasm to fill a stadium. Working with him has been a pleasure and hopefully down the line we'll work together again.</p>',
   logo: 'logo4.png'}
   
   
