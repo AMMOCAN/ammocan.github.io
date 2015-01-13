@@ -3,7 +3,9 @@
 markdown: kramdown
 permalink: pretty
 
-port: 8000
+port: 4000
+host: 127.0.0.1
+baseurl: "ammocan.github.io" # does not include hostname
 
 include: ['_includes/work']
 exclude: []
