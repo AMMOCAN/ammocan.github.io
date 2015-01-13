@@ -9,7 +9,7 @@ avatar: "ammocan-profile.jpg"
 # Colors
 accent: "#996633"
 accent-light: "#336699"
-bgcolor: "#e5eaee"
+bgcolor: "#f2f2f2"
 documentBackgroundColor: "#fff"
 headlineColor: "#333"
 textColor: "#666"
