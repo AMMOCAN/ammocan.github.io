@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html class="">
 <head>
-  <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+  <meta charset="UTF-8"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="{{ site.data.settings.seo.description }}"/>
+  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}"/>
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"/>
   
-  <META http-equiv="refresh" content="2; URL=/">
+  <META http-equiv="refresh" content="2; URL=/"/>
   
   <title>{{ site.data.settings.title }}</title>
 
@@ -21,14 +21,9 @@
 </head>
 <body class="form-success">
 
-
 <h1>Form submitted successfully!</h1>
 
 <p>Please wait while we return you to {{ site.data.settings.title }}</p>
-
-
-
-
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/functions.js"></script>
