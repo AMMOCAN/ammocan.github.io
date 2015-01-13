@@ -29,11 +29,10 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **AMMOCAN specializes in dropping creativity** back into technology.
+  **AMMOCAN specializes in dropping creativity back into technology**.
   Most of the things he creates are [more than meets the eye](http://www.2-Drops.com),
   but he also puts great effort into assisting fellow [vetrepreneurs](http://vet-tech.us)
   and creating [YouTube tutorials](http://youtube.com/user/2DropsVlog) on ways to be a better web citizen.
-
 
 skills:
 - {name: Passion, value: '10'}
@@ -71,10 +70,11 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/2DropsTweet'}
+
 - {icon: 'behance', link: 'https://www.behance.net/ammocan'}
-- {icon: 'youtube', link: 'https://www.youtube.com/2DropsVlog'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/ammocan/'}
+- {icon: 'youtube', link: 'https://www.youtube.com/2DropsVlog'}
+- {icon: 'twitter', link: 'http://twitter.com/2DropsTweet'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
   
