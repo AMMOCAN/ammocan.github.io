@@ -2,7 +2,7 @@
 
   <h3>Let's work together</h3>
   
-<form method="POST" action="//forms.brace.io/{{ site.data.settings.email }}">
+<form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
   
   <div class="contact-info-group">
 
@@ -16,10 +16,14 @@
 
   <label><span>Tell me about your project</span>
   <textarea name="message"></textarea></label>
+  
+  <input type="text" name="_gotcha" style="display:none" />
 
   <div class="submit-wrap">
     <input type="submit" value="Send">
   </div>
+  
+  <input type="hidden" name="_next" value="//ammocan.github.io/form-success.html"
 
 </form>
   
