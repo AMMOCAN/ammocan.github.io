@@ -3,7 +3,7 @@
 markdown: kramdown
 permalink: pretty
 
-port: 80
+port: 4000
 host: 127.0.0.1
 baseurl: "http://ammocan.github.io" # does not include hostname
 
