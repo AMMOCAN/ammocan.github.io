@@ -1,26 +1,47 @@
 footer
   @extend %background-image
-  background-image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
+  background-image: url(../img/#{$hero-path})
   
   .lockup
     padding: 50px 30px
     +clearfix
     
+    .drops-twoDrops
+      color: rgba(51,102,153,0.7)
+      float: left
+      font-size: 4.6em
+      
+      &:hover
+        color: rgba(51,102,153,1)
+    
     .content-wrap
       float: left
-      margin-left: 80px
+      margin-left: 40px
+      padding-top: .7em
       
       .copyright
-        margin: 0
+        margin: 0 1.875em 0 0
         text-transform: uppercase
+        text-align: center
         font-size: 12px
-        color: rgba(0,0,0,0.4)
+        color: rgba(0,0,0,0.5)
+        
+        a
+          margin-right: .25em
       
       a
         @extend %small-bold
-        color: rgba(0,0,0,0.5)
+        color: rgba(51,102,153,0.7)
         display: inline-block
-        margin-right: 30px
+        margin-right: 1.875em
         
         &:hover
-          color: rgba(0,0,0,0.7)
+          color: rgba(51,102,153,1)
+          
+@media (max-width: 640px)
+
+  footer
+    .lockup
+    
+      .content-wrap
+        margin-left: .7em

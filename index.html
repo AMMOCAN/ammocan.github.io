@@ -11,10 +11,10 @@
     <meta name="author" href="{{ site.data.settings.seo.rel-author }}"/>
     <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"/>
     
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.settings.title }} | {{ site.data.settings.description }}</title>
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.data.settings.title }} | {{ site.data.settings.description }}" href="{{ site.baseurl }}/feed.xml" />
     
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 

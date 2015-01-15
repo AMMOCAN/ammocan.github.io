@@ -6,10 +6,10 @@
     
     <div class="face-img"></div>
     
-    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
-    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
-    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
-    <div class="icon-video">{% include icons/icon-video.html %}</div>
+    <div class="icowrap-one"><span class="drops-wordpress"></span></div>
+    <div class="icowrap-two"><span class="drops-html5"></span></div>
+    <div class="icowrap-three"><span class="drops-css3"></span></div>
+    <div class="icowrap-four"><span class="drops-player"></span></div>
     
   </div>
   
@@ -27,7 +27,7 @@
         <div class="skill-label">{{ skill.name }}</div>
         <div class="skill-icons skill-{{ skill.value }}">
           {% for i in (1..10) %}
-            <span></span>
+            <span class="drops-twoDrops"></span>
           {% endfor %}
         </div>
       </div>    

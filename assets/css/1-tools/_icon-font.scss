@@ -59,3 +59,97 @@ line-height: 1;
 .icon-vine:before {
 	content: "\f1ca";
 }
+
+//2Drops Icon Font Styling
+@font-face {
+  font-family: '2Drops';
+  src: url('../../../fonts/2Drops.eot');
+  src: url('../../../fonts/2Drops.eot?#iefix') format('embedded-opentype'),
+     url('../../../fonts/2Drops.woff') format('woff'),
+     url('../../../fonts/2Drops.ttf') format('truetype'),
+     url('../../../fonts/2Drops.svg#2Drops') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="drops-"]{
+  content: "";
+  @include inline-block;
+  font-family: '2Drops';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.drops-twoDrops:before {
+	content: "\e600";
+}
+.drops-scoop:before {
+	content: "\e601";
+}
+.drops-creations:before {
+	content: "\e602";
+}
+.drops-contact:before {
+	content: "\e603";
+}
+.drops-blogDrop:before {
+	content: "\e604";
+}
+.drops-kudos:before {
+	content: "\e605";
+}
+.drops-twitter:before {
+	content: "\e606";
+}
+.drops-linkedin:before {
+	content: "\e607";
+}
+.drops-facebook:before {
+	content: "\e608";
+}
+.drops-deviantArt:before {
+	content: "\e609";
+}
+.drops-googlePlus:before {
+	content: "\e60a";
+}
+.drops-player:before {
+	content: "\e60b";
+}
+.drops-users:before {
+	content: "\e60c";
+}
+.drops-arrow-up:before {
+	content: "\e60d";
+}
+.drops-wordpress:before {
+	content: "\e60e";
+}
+.drops-html5:before {
+	content: "\e60f";
+}
+.drops-css3:before {
+	content: "\e610";
+}
+.drops-chrome:before {
+	content: "\e611";
+}
+.drops-firefox:before {
+	content: "\e612";
+}
+.drops-ie:before {
+	content: "\e613";
+}
+.drops-opera:before {
+	content: "\e614";
+}
+.drops-safari:before {
+	content: "\e615";
+}

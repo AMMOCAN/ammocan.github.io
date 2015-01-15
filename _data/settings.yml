@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 
-title: AMMOCAN
+title: ✪ AMMOCAN ✪
 description: Designer ✪ Coder ✪ Veteran
 email: ammo@2-Drops.com
 
@@ -35,13 +35,13 @@ blurb: >
   and creating [YouTube tutorials](http://youtube.com/user/2DropsVlog) on ways to be a better web citizen.
 
 skills:
+- {name: Communication, value: '8'}
+- {name: Discipline, value: '9'}
+- {name: Diversity, value: '8'}
+- {name: Efficiency, value: '8'}
+- {name: Learning, value: '9'}
 - {name: Passion, value: '10'}
 - {name: Problem Solving, value: '9'}
-- {name: Communication, value: '8'}
-- {name: Diversity, value: '8'}
-- {name: Discipline, value: '9'}
-- {name: Efficiency, value: '8'}
-- {name: Learning, value: '10'}
 - {name: Responsibility, value: '9'}
 
 #-------------------------------

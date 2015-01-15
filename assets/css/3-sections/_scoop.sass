@@ -13,22 +13,26 @@
     +size(250px)
     +order(3)
     
-  [class^="icon-"]
+  [class^="icowrap-"]
     +size(100px)
     background: $bgcolor
     border-radius: 50%
-    
-    path
-      fill: $accent
-    
-    &.icon-pencil
+    line-height: 100px
+    text-align: center
+    &.icowrap-one
       +order(1)
-    &.icon-mouse
+    &.icowrap-two
       +order(2)
-    &.icon-browser
+    &.icowrap-three
       +order(4)
-    &.icon-video
+    &.icowrap-four
       +order(5)
+    
+    [class^="drops-"]
+      color: $accent
+      font-family: "2Drops"
+      font-size: 50px
+      line-height: inherit
 
 @media screen and (max-width: 650px)
   .face-lockup
@@ -45,7 +49,7 @@
         repeat: no-repeat
       margin: 0 auto 30px
       
-    [class^="icon-"]
+    [class^="icowrap-"]
       margin: 10px 9%
       
 
@@ -76,20 +80,20 @@
     font-size: 0
     margin: 3px 0 30px
     
-    span
+    .drops-twoDrops
       display: inline-block
+      font-family: "2Drops"
+      font-size: 14px
       +size(14px)
-      background-color: $accent
+      color: $accent
       margin-right: 8px
-      border-radius: 50%
       
       &:after
         content: ''
         display: block
+        font-size: 10px
         +size(10px)
         background: #fff
-        border-radius: 50%
-        margin: 2px
     
     @for $i from 1 through 10
       &.skill-#{$i} span:nth-child(n+#{$i+1})
@@ -97,7 +101,7 @@
       
 
 %skill-color
-  background: $bgcolor
+  color: $bgcolor
   
   
 

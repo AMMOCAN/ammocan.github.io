@@ -1,32 +1,36 @@
 header
   @extend %background-image
   background:
-    position: 30px 20px, 50% 50%
-    image: url(../img/#{$logo-path}), url(../img/#{$hero-path}) 
+    position: 50% 50%
+    image: url(../img/#{$hero-path}) 
   padding-bottom: 50px
   
   
   .logo
-    +size(100px)
     float: left
-    margin: 10px 0 0 30px
+    +size(100px)
+    margin: 0 2em
     
-    path
-      fill: rgba(0,0,0,0.4)
+    .drops-twoDrops
+      color: rgba(51,102,153,0.7)
+      font-size: 7.15em
+      
+      &:hover
+        color: rgba(51,102,153,1)
     
   nav
     float: right
-    padding: 30px 30px 0 0
+    padding: 40px 30px 0 0
     
     a
       display: inline-block
       margin-left: 20px
       
-      color: rgba(0,0,0,0.7)
+      color: rgba(51,102,153,0.7)
       @extend %small-bold
       
       &:hover
-        color: rgba(0,0,0,1)
+        color: rgba(51,102,153,1)
     
   h1
     text-align: center
@@ -40,10 +44,11 @@ header
     clear: both
     padding-top: 100px
     
+    
     span
       display: inline-block
       padding: 0.2em 0.5em
-      border: white solid 10px
+      border-bottom: #996633 solid 10px
   
   .kicker
     @extend %small-bold
@@ -55,12 +60,16 @@ header
 @media (max-width: 640px)
   header
     background:
-      position: 50% 20px, 50% 50%
+      position: 50% 50%
+    
+    .logo
+      float: none
+      margin: 0 auto
   
     nav
       float: none
       text-align: center
-      padding-top: 90px
+      padding: 0 22px 0 0
     
     h1
       padding-top: 0px
