@@ -1,21 +1,28 @@
+// slide over contact under footer
+#formGroup
+  z-index: 5
+    
+#formGroup .parallax_layer-base
+  @include linear-gradient(to top, #FFFFFF 44%, #ECE9E6 56%)
+
 form
   max-width: 450px
-  margin: 0 auto 100px
-  padding: 0 20px
+  margin: 0 auto 6.25em
+  padding: 2.5em 1.25em 0 1.25em
   
   input, textarea
+    appearance: none
     border: 3px solid $accent
-    width: 100%
     +box-sizing(border-box)
-    padding: 10px
+    font-size: 1em
+    padding: .625em
+    width: 100%
     -webkit-appearance: none
     -moz-appearance: none
-    appearance: none
-    font-size: 16px
     
     &:focus
-      outline: none
       border-color: $accent-light
+      outline: none
   
   textarea
     height: 10em
@@ -26,33 +33,29 @@ form
   [type="submit"]
     background: $accent
     color: white
-    font-size: 18px
+    font-size: 1.125em
     text-transform: uppercase
     width: 33%
     
     &:hover
       background: $accent-light
 
-    
-    
-  
-  
   .contact-info-group
     
     label
-      width: 50%
-      float: left
       +box-sizing(border-box)
+      float: left
+      width: 50%
       
       &:nth-child(1)
-        padding-right: 10px
+        padding-right: .625em
         
       &:nth-child(2)
-        padding-left: 10px
+        padding-left: .625em
   
   label
     display: block
-    margin-bottom: 20px
+    margin-bottom: 1.25em
     
     span
       display: block

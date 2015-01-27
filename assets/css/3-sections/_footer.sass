@@ -1,12 +1,18 @@
-footer
+// slide over last group
+#footerGroup
+  z-index: 7
+
+#footerGroup .parallax_layer-base  
   @extend %background-image
-  background-image: url(../img/#{$hero-path})
+  background:
+    image: url(../img/#{$footer-path})
   
   .lockup
-    padding: 50px 30px
+    background-color: rgba(255,255,255,0.7)
+    padding: 3.125em 1.875em 3.125em 1.875em
     +clearfix
     
-    .drops-twoDrops
+    .icon-twoDrops
       color: rgba(51,102,153,0.7)
       float: left
       font-size: 4.6em
@@ -14,17 +20,17 @@ footer
       &:hover
         color: rgba(51,102,153,1)
     
-    .content-wrap
+    .nav-wrap
       float: left
-      margin-left: 40px
+      margin-left: 2.5em
       padding-top: .7em
       
       .copyright
+        color: rgba(0,0,0,0.5)
+        font-size: .75em
         margin: 0 1.875em 0 0
         text-transform: uppercase
         text-align: center
-        font-size: 12px
-        color: rgba(0,0,0,0.5)
         
         a
           margin-right: .25em
@@ -40,8 +46,27 @@ footer
           
 @media (max-width: 640px)
 
-  footer
+  #footerGroup .parallax_layer-base
     .lockup
     
-      .content-wrap
+      .nav-wrap
         margin-left: .7em
+        
+@media (max-width: 480px)
+
+  #footerGroup .parallax_layer-base
+    .lockup
+      padding: 1.25em 0 1.75em 0
+      
+      .icon-twoDrops
+        float: none
+    
+      .nav-wrap
+        margin-left: 1.65em
+        padding-top: 0
+        
+        .copyright
+          padding-top: 1em
+        
+        a
+          margin-right: 1.65em

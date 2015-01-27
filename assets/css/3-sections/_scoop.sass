@@ -1,15 +1,25 @@
+// slide under header and skills
+#scoopGroup
+  z-index: 5
+    
+#scoopGroup .parallax_layer-back
+  @extend %background-image
+  background:
+    image: url(../img/#{$scoop-path})
+
 .face-lockup
+  margin: 0 auto 3.125em
   max-width: 780px
+  padding-top: 2.5em
   +display(flex)
-  margin: 0 auto
   +align-items(center)
   +justify-content(space-between)
   
   .face-img
-    border-radius: 50%
     background-size: cover
     background-position: center
     background-image: url(../img/#{$avatar-path})
+    border-radius: 50%
     +size(250px)
     +order(3)
     
@@ -28,13 +38,14 @@
     &.icowrap-four
       +order(5)
     
-    [class^="drops-"]
+    [class^="icon-"]
       color: $accent
-      font-family: "2Drops"
-      font-size: 50px
+      font-family: "ammo"
+      font-size: 4.125em
       line-height: inherit
 
 @media screen and (max-width: 650px)
+
   .face-lockup
     display: block
     text-align: center
@@ -43,86 +54,118 @@
       display: inline-block
     
     .face-img
-      display: block
       background:
         position: center center
         repeat: no-repeat
-      margin: 0 auto 30px
+      display: block
+      margin: 0 auto 1.875em
+      +size(200px)
       
     [class^="icowrap-"]
+      line-height: 75px
       margin: 10px 9%
+      +size(75px)
       
+      [class^="icon-"]
+        font-size: 3.125em
+        
+@media screen and (max-width: 480px)
 
+  h3
+    padding: 1.25em 0 0 0
 
-
+  .face-lockup
+    display: block
+    margin: 0 auto 2em
+    padding-top: 1em
+    text-align: center
+    
+    div
+      display: inline-block
+    
+    .face-img
+      background:
+        position: center center
+        repeat: no-repeat
+      display: block
+      margin: 0 auto 1.5em
+      +size(150px)
+      
+    [class^="icowrap-"]
+      line-height: 68px
+      margin: 10px 9%
+      +size(68px)
+      
+      [class^="icon-"]
+        font-size: 2.75em
+      
 .blurb
-  max-width: 620px
-  padding: 0 20px
-  margin: 50px auto
-  font-size: 24px
-  text-align: center
+  font-size: 1.5em
   font-weight: 300
+  margin: 3.125em auto
+  max-width: 620px
+  padding: 0 1.25em 0 1.25em
+  text-align: center
   
-  
+@media screen and (max-width: 650px)
+  .blurb
+    font-size: 1.375em
+    margin: 1.25em auto
+    padding: 0 1.25em 1.25em 1.25em
+    
+@media screen and (max-width: 480px)
+  .blurb
+    font-size: 1.125em
+    margin: 1.125em auto
+    padding: 0 1.25em 1em 1.25em
+
+// slide over scoop and creations 
+#skillGroup
+  z-index: 5
+    
+#skillGroup .parallax_layer-base
+  @include linear-gradient(to top, #FFFFFF 44%, #ECE9E6 56%)
   
 .skill-lockup
+  color: #999999
+  margin: 0 auto 3.125em
   max-width: 540px
-  margin: 100px auto
-  color: #999
+  text-align: center
   +clearfix
   
-  
   .skill-unit
-    width: 270px
     float: left
+    padding-top: 1.5em
+    width: 270px
   
   .skill-icons
     font-size: 0
-    margin: 3px 0 30px
+    margin: .1875em 0 1.875em
     
-    .drops-twoDrops
+    .icon-twoDrops
+      color: $accent
       display: inline-block
-      font-family: "2Drops"
+      font-family: "ammo"
       font-size: 14px
       +size(14px)
-      color: $accent
-      margin-right: 8px
+      margin-right: .5em
       
       &:after
         content: ''
         display: block
         font-size: 10px
         +size(10px)
-        background: #fff
     
     @for $i from 1 through 10
       &.skill-#{$i} span:nth-child(n+#{$i+1})
         @extend %skill-color
       
-
 %skill-color
   color: $bgcolor
   
-  
-
-
 @media screen and (max-width: 541px)
   .skill-lockup
     width: 220px
     
     .skill-unit
-      width: 220px 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      width: 220px

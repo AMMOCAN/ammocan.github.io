@@ -1,0 +1,50 @@
+/**************/
+/* BASE RULES */
+/**************/
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.date {
+  font-style: italic;
+  color: $textColor;
+}
+
+/*********************/
+/* LAYOUT / POSTS */
+/*********************/
+
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $bgcolor;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $textColor;
+    padding: 0.1em 1em;
+    color: $textColor;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}

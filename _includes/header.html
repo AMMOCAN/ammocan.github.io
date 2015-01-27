@@ -1,16 +1,20 @@
-<header id="header">
-	
-	<div class="logo">
-  	<a href="{{ site.baseurl }}" target="_parent" title="back to homepage"><span class="drops-twoDrops"></span></a>
-	</div>
+<header id="headerGroup" class="parallax_group">
+  <div class="parallax_layer parallax_layer-base">
+
+  	<div class="logo">
+    	<a href="{{ site.baseurl }}/" target="_parent" title="back to homepage"><span class="icon-twoDrops"></span></a>
+  	</div>
+      
+    <nav>
+      {% for item in site.data.settings.menu %}
+        <a href="/{{ item.url }}">{{ item.name }}</a>
+      {% endfor %}
+    </nav>
     
-  <nav>
-    {% for item in site.data.settings.menu %}
-      <a href="{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-  
-  <h1><span>{{ site.data.settings.title }}</span></h1>
-  <p class="kicker">{{ site.data.settings.description }}</p>
-  
+    <div class="contentWrap">
+      <div><h1><span>{{ site.data.settings.title }}</span></h1></div>
+      <div><p class="kicker">{{ site.data.settings.description }}</p></div>
+    </div>
+      
+  </div>
 </header>

@@ -1,51 +1,62 @@
-.section-contact
-  text-align: center
+// slide under kudos and form
+#contactGroup
+  z-index: 4
+    
+#contactGroup .parallax_layer-back
+  @extend %background-image
+  background:
+    image: url(../img/#{$contact-path})
+    
+#contactGroup .parallax_layer-base
 
 .social-links
   max-width: 700px
-  margin: 0px auto 50px
+  margin: 0 auto 3.125em
   +display(flex)
   +justify-content(space-around)
   +flex-wrap(wrap)
   
   a
-    display: block
     //background: $accent
-    border: 2px solid $accent
-    +size(50px)
-    line-height: 50px
-    color: $accent
+    border: 2px solid $social-accent
+    +size(66px)
     border-radius: 50%
-    font-size: 28px
-    margin: 20px
+    color: $social-accent
+    display: block
+    font-size: 2.75em
+    line-height: 66px
+    margin: 1.25em
     position: relative
     
+    &:hover
+      border-color: $social-hover
+      color: $social-hover
     
     &:after
       content: ''
       display: block
-      +position(absolute, 0px 0px 0px 0px)
-      border: 2px solid $accent
+      border: 2px solid $social-accent
       border-radius: 50%
       margin: -2px
       opacity: 1
+      +position(absolute, 0px 0px 0px 0px)
       +transition()
       
     &:hover:after
-      +transform(scale(1.5))
       opacity: 0
-
+      +transform(scale(1.5))
+  
 .bar
   width: 250px
-  height: 0px
+  height: 0
   border-top: 4px solid $accent
-  margin: 0px auto 50px
+  margin: 0 auto 3.125em
 
 .biglink
   display: inline-block
   font:
-    size: 72px
+    size: 4.5em
     weight: 300
   line-height: 1
-  width: 90%
   margin: 0 auto
+  width: 100%

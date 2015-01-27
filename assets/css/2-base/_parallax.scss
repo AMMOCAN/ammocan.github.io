@@ -1,0 +1,67 @@
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.parallax_group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax_layer-base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 2;
+}
+
+.parallax_layer-back {
+  -webkit-transform: translateZ(-600px) scale(1.6);
+  transform: translateZ(-600px) scale(1.6);
+  z-index: 1;
+}
+
+.contentWrap {
+  position: absolute;
+  left: 50%;
+  max-width: 780px;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contentWrap.creationsWrap { max-width: 100%; }
+
+.contentWrap.kudosWrap { max-width: 100%; }
+
+.contentWrap.footerWrap { max-width: 100%; top: 58%; }
+
+@media screen and (max-width: 650px) {
+  .contentWrap.scoopWrap { height: 92%; }
+  
+  .contentWrap.kudosWrap { height: 84%; }
+}
+@media screen and (max-width: 650px) {
+  .contentWrap.scoopWrap { height: 100%; }
+  
+  .contentWrap.kudosWrap { height: 100%; }
+}

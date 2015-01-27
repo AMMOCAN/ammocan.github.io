@@ -1,41 +1,38 @@
 /*	Typography presets
   ------------------------------------	*/
-
 .gigantic, .huge, .large, .bigger, .big, 
 h1, h2, h3, h4, h5, h6
   color: $headlineColor
   font-weight: bold
 
 .gigantic
-  font-size: 110px
-  line-height: 1.09
+  font-size: 6.875em
   letter-spacing: -2px
+  line-height: 1.09
 
 .huge, h1
-  font-size: 68px
-  line-height: 1.05
+  font-size: 4.25em
   letter-spacing: -1px
+  line-height: 1.05
 
 .large, h2
-  font-size: 42px
+  font-size: 2.625em
   line-height: 1.14
 
 .bigger, h3 
-  font-size: 26px
+  font-size: 1.625em
   line-height: 1.38
 
 .big, h4
-  font-size: 22px
+  font-size: 1.375em
   line-height: 1.38
 
 .small, small 
-  font-size: 10px
+  font-size: .625em
   line-height: 1.2
 
-
-
 p
-  margin: 0 0 20px 0
+  margin: 0 0 1.25em 0
 
 em
   font-style: italic
@@ -47,26 +44,21 @@ hr
   border: solid #ddd
   border-width: 1px 0 0
   clear: both
-  margin: 10px 0 30px
   height: 0
-
-
+  margin: .625em 0 1.875em
 
 /* Links
   ------------------------------------	*/
 a
   color: $linkColor
-  text-decoration: none
   outline: 0
+  text-decoration: none
   
 a:hover, a:focus
   color: lighten($linkColor, 20%)
 
-
-
 /* Selection colors (easy to forget)
   ------------------------------------	*/
-
 ::selection
   background: $selectionColor
   
@@ -82,16 +74,16 @@ img::-moz-selection
 body
   -webkit-tap-highlight-color: $selectionColor
 
-
-
 /* Basic Styles
   ------------------------------------	*/
+body, html
+  height: 100%
+  
 body
-  background: $documentBackgroundColor
-  font-size: 14px
-  line-height: 1.6
-  font-family: 'Open Sans' sans-serif
   color: $textColor
+  font-family: 'Open Sans' sans-serif
+  font-size: .875em
+  line-height: 1.6
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
@@ -101,16 +93,9 @@ svg
 h3
   @extend %small-bold
   color: $accent-light
+  padding: 0 0 0 0
   text-align: center
-  padding: 100px 0 30px
 
 @media screen and (max-width: 480px)
   h3
-    padding: 50px 0 50px
-
-.alt-section
-  background: $bgcolor
-  padding-bottom: 100px
-  
-  h3
-    color: darken($accent-light, 10%)
+    padding: 3.125em 0 3.125em 0
