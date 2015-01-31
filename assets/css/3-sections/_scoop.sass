@@ -129,14 +129,12 @@
 .skill-lockup
   color: #999999
   margin: 0 auto 3.125em
-  max-width: 540px
+  max-width: 780px
   text-align: center
   +clearfix
   
   .skill-unit
-    float: left
     padding-top: 1.5em
-    width: 270px
   
   .skill-icons
     font-size: 0
@@ -146,15 +144,15 @@
       color: $accent
       display: inline-block
       font-family: "ammo"
-      font-size: 14px
-      +size(14px)
+      font-size: 20px
+      +size(20px)
       margin-right: .5em
       
       &:after
         content: ''
         display: block
-        font-size: 10px
-        +size(10px)
+        font-size: 16px
+        +size(16px)
     
     @for $i from 1 through 10
       &.skill-#{$i} span:nth-child(n+#{$i+1})
@@ -165,7 +163,7 @@
   
 @media screen and (max-width: 541px)
   .skill-lockup
-    width: 220px
+    width: 320px
     
     .skill-unit
-      width: 220px
+      width: 320px

@@ -687,7 +687,7 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
 
   .contentWrap.kudosWrap {
     height: 84%; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 480px) {
   .contentWrap.scoopWrap {
     height: 100%; }
 
@@ -968,16 +968,14 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
 .skill-lockup {
   color: #999999;
   margin: 0 auto 3.125em;
-  max-width: 540px;
+  max-width: 780px;
   text-align: center; }
   .skill-lockup:after {
     content: "";
     display: table;
     clear: both; }
   .skill-lockup .skill-unit {
-    float: left;
-    padding-top: 1.5em;
-    width: 270px; }
+    padding-top: 1.5em; }
   .skill-lockup .skill-icons {
     font-size: 0;
     margin: 0.1875em 0 1.875em; }
@@ -985,25 +983,25 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
       color: #996633;
       display: inline-block;
       font-family: "ammo";
-      font-size: 14px;
-      height: 14px;
-      width: 14px;
+      font-size: 20px;
+      height: 20px;
+      width: 20px;
       margin-right: 0.5em; }
       .skill-lockup .skill-icons .icon-twoDrops:after {
         content: "";
         display: block;
-        font-size: 10px;
-        height: 10px;
-        width: 10px; }
+        font-size: 16px;
+        height: 16px;
+        width: 16px; }
 
 .skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   color: #dedede; }
 
 @media screen and (max-width: 541px) {
   .skill-lockup {
-    width: 220px; }
+    width: 320px; }
     .skill-lockup .skill-unit {
-      width: 220px; } }
+      width: 320px; } }
 #creationsGroup {
   z-index: 4; }
 
@@ -1316,6 +1314,8 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
 
+  .clients-belt .client-unit {
+    padding-top: 0; }
   .clients-belt .client-unit.active-client {
     display: block;
     left: auto;
@@ -1381,11 +1381,11 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .social-links a {
-    border: 2px solid #336699;
+    border: 2px solid #999933;
     height: 66px;
     width: 66px;
     border-radius: 50%;
-    color: #336699;
+    color: #999933;
     display: block;
     font-size: 2.75em;
     line-height: 66px;
@@ -1397,7 +1397,7 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
     .social-links a:after {
       content: "";
       display: block;
-      border: 2px solid #336699;
+      border: 2px solid #999933;
       border-radius: 50%;
       margin: -2px;
       opacity: 1;
