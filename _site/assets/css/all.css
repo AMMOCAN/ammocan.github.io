@@ -751,10 +751,11 @@ h3, #headerGroup .parallax_layer-base .kicker, #footerGroup .parallax_layer-base
     float: none;
     margin: 0 auto; }
   #headerGroup .parallax_layer-base nav {
-    font-size: 14px;
     float: none;
     text-align: center;
     padding: 0 22px 0 0; }
+    #headerGroup .parallax_layer-base nav a {
+      font-size: 14px; }
   #headerGroup .parallax_layer-base h1 {
     font-size: 48px;
     padding-top: 0px; } }
