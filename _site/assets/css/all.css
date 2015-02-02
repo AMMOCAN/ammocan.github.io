@@ -640,16 +640,20 @@ h3, #headerGroup .parallax_layer-base .kicker, #footerGroup .parallax_layer-base
   height: 500px;
   /* fallback for older browsers */
   height: 100vh;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-perspective: 1000px;
-  perspective: 1000px; }
+  -webkit-perspective: 1px;
+  perspective: 1px; }
 
 .parallax_group {
   position: relative;
   height: 500px;
   /* fallback for older browsers */
   height: 100vh;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
@@ -666,8 +670,8 @@ h3, #headerGroup .parallax_layer-base .kicker, #footerGroup .parallax_layer-base
   z-index: 2; }
 
 .parallax_layer-back {
-  -webkit-transform: translateZ(-600px) scale(1.6);
-  transform: translateZ(-600px) scale(1.6);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
   z-index: 1; }
 
 .contentWrap {
@@ -1003,7 +1007,7 @@ progress, progress[value] {
   position: relative;
   width: 44%; }
   .skill-unit ::-webkit-progress-value {
-    -webkit-animation: bar-fill 16s;
+    -webkit-animation: bar-fill 6s;
     width: 0; }
   .skill-unit ::-webkit-progress-bar {
     background-color: #dedede;
