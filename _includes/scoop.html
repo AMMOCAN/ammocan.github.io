@@ -31,25 +31,6 @@
     <div class="contentWrap">
     
       <h2 id="skill">Professional Stack</h2>
-  
-      {% if site.data.settings.skills %}
-  
-      <ul class="skill-lockup">
-    
-        {% for skill in site.data.settings.skills %}
-    
-        <li class="skill-unit">
-          <h3 class="skill-label">{{ skill.name }}</h3>
-          <progress class="skill-{{ skill.order }}" max="100" value="{{ skill.value }}">
-            <strong>Skill Level: {{ skill.value }}%</strong>
-          </progress>
-        </li>    
-    
-        {% endfor %}
-        
-      </ul>
-      
-      {% endif %}
       
     </div>
     
