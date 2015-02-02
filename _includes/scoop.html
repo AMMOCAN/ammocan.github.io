@@ -4,7 +4,7 @@
     
     <div class="contentWrap scoopWrap">
 
-      <h3 id="scoop">Scoop On AMMO</h3>
+      <h2 id="scoop">Scoop On AMMO</h2>
       
       <div class="face-lockup">
         
@@ -30,26 +30,24 @@
     
     <div class="contentWrap">
     
-      <h3 id="skill">Intangibles</h3>
+      <h2 id="skill">Professional Stack</h2>
   
       {% if site.data.settings.skills %}
   
-      <div class="skill-lockup">
+      <ul class="skill-lockup">
     
         {% for skill in site.data.settings.skills %}
     
-        <div class="skill-unit">
-          <div class="skill-label">{{ skill.name }}</div>
-          <div class="skill-icons skill-{{ skill.value }}">
-            {% for i in (1..10) %}
-              <span class="icon-twoDrops"></span>
-            {% endfor %}
-          </div>
-        </div>    
+        <li class="skill-unit">
+          <h3 class="skill-label">{{ skill.name }}</h3>
+          <progress class="skill-{{ skill.order }}" max="100" value="{{ skill.value }}">
+            <strong>Skill Level: {{ skill.value }}%</strong>
+          </progress>
+        </li>    
     
         {% endfor %}
         
-      </div>
+      </ul>
       
       {% endif %}
       

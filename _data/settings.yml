@@ -35,14 +35,14 @@ blurb: >
   and creating [YouTube tutorials](http://youtube.com/user/2DropsVlog) on ways to be a better web citizen.
 
 skills:
-- {name: Communication, value: '8'}
-- {name: Discipline, value: '9'}
-- {name: Diversity, value: '8'}
-- {name: Efficiency, value: '8'}
-- {name: Learning, value: '9'}
-- {name: Passion, value: '10'}
-- {name: Problem Solving, value: '9'}
-- {name: Responsibility, value: '9'}
+- {name: Mac OS, order: '1', value: '100'}
+- {name: AMP + Git, order: '2', value: '92'}
+- {name: Adobe Fw/Ai/Ps, order: '3', value: '94'}
+- {name: Coda + CodeKit, order: '4', value: '96'}
+- {name: CSS3 + Sass/SCSS, order: '5', value: '90'}
+- {name: HTML5, order: '6', value: '96'}
+- {name: JS + jQuery, order: '7', value: '70'}
+- {name: WordPress, order: '8', value: '88'}
 
 #-------------------------------
 # Work Section

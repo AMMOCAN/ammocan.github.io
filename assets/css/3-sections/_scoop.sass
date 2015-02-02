@@ -71,7 +71,7 @@
         
 @media screen and (max-width: 480px)
 
-  h3
+  h2
     padding: 1.25em 0 0 0
 
   .face-lockup
@@ -126,44 +126,64 @@
 #skillGroup .parallax_layer-base
   @include linear-gradient(to top, #FFFFFF 44%, #ECE9E6 56%)
   
+// Skill Bars
+progress, progress[value]
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: none
+  background-size: auto
+  height: 50px
+  width: 100%
+ 
+// The unordered list  
 .skill-lockup
-  color: #999999
-  margin: 0 auto 3.125em
-  max-width: 780px
-  text-align: center
+  list-style: none
+  margin: 0
+  padding: 1em
   +clearfix
   
-  .skill-unit
-    padding-top: 1.5em
+// The list item
+.skill-unit
+  border-radius: 25px
+  float: left
+  margin-bottom: 1em
+  padding: 0 3%
+  position: relative
+  width: 44%
   
-  .skill-icons
-    font-size: 0
-    margin: .1875em 0 1.875em
-    
-    .icon-twoDrops
-      color: $accent
-      display: inline-block
-      font-family: "ammo"
-      font-size: 20px
-      +size(20px)
-      margin-right: .5em
+  ::-webkit-progress-value
+    -webkit-animation: bar-fill 16s
+    width: 0
+
+  ::-webkit-progress-bar
+    background-color: $bgcolor
+    border-radius: 25px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25) inset
       
-      &:after
-        content: ''
-        display: block
-        font-size: 16px
-        +size(16px)
-    
-    @for $i from 1 through 10
-      &.skill-#{$i} span:nth-child(n+#{$i+1})
-        @extend %skill-color
-      
-%skill-color
-  color: $bgcolor
-  
-@media screen and (max-width: 541px)
-  .skill-lockup
-    width: 320px
-    
-    .skill-unit
-      width: 320px
+// Add percentage to bar
+$percentage-list: '100%' '92%' '94%' '96%' '90%' '96%' '70%' '88%'
+@for $i from 1 through length($percentage-list)
+  .skill-#{$i}::-webkit-progress-value::before
+    color: $bgcolor
+    content: nth($percentage-list, $i)
+    position: absolute
+    left: 45%
+    top: 60%
+
+// Style the bar colors
+[class^="skill-"]::-webkit-progress-value
+  background: $accent
+  border-radius: 25px
+
+[class^="skill-"]::-moz-progress-bar
+  background: $accent
+
+// Animation Keyframes
+@-webkit-keyframes bar-fill
+  0%
+    width: 0
+
+@keyframes bar-fill
+  0%
+    width: 0

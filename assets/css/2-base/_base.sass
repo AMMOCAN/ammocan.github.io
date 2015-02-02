@@ -90,12 +90,17 @@ body
 svg
   +size(100%)
 
+h2
+  @extend %medium-bold
+  color: $accent-light
+  padding: 0 0 0 0
+  text-align: center
+  
 h3
   @extend %small-bold
-  color: $accent-light
   padding: 0 0 0 0
   text-align: center
 
 @media screen and (max-width: 480px)
-  h3
+  h2
     padding: 3.125em 0 3.125em 0

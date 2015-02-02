@@ -606,15 +606,24 @@ svg {
   height: 100%;
   width: 100%; }
 
-h3 {
+h2 {
   color: #336699;
   padding: 0 0 0 0;
   text-align: center; }
 
+h3 {
+  padding: 0 0 0 0;
+  text-align: center; }
+
 @media screen and (max-width: 480px) {
-  h3 {
+  h2 {
     padding: 3.125em 0 3.125em 0; } }
-h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .kicker, #footerGroup .parallax_layer-base .lockup .nav-wrap a {
+h2, #headerGroup .parallax_layer-base nav a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h3, #headerGroup .parallax_layer-base .kicker, #footerGroup .parallax_layer-base .lockup .nav-wrap a {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
@@ -710,7 +719,7 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
         color: #336699; }
   #headerGroup .parallax_layer-base nav {
     float: right;
-    padding: 40px 30px 0 0; }
+    padding: 40px 50px 0 0; }
     #headerGroup .parallax_layer-base nav a {
       display: inline-block;
       margin-left: 20px;
@@ -781,6 +790,7 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
       #footerGroup .parallax_layer-base .lockup .nav-wrap a {
         color: rgba(51, 102, 153, 0.7);
         display: inline-block;
+        font-size: 14px;
         margin-right: 1.875em; }
         #footerGroup .parallax_layer-base .lockup .nav-wrap a:hover {
           color: #336699; }
@@ -915,7 +925,7 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
       .face-lockup [class^="icowrap-"] [class^="icon-"] {
         font-size: 3.125em; } }
 @media screen and (max-width: 480px) {
-  h3 {
+  h2 {
     padding: 1.25em 0 0 0; }
 
   .face-lockup {
@@ -965,43 +975,108 @@ h3, #headerGroup .parallax_layer-base nav a, #headerGroup .parallax_layer-base .
   background-image: -webkit-linear-gradient(bottom, #FFFFFF 44%, #ECE9E6 56%);
   background-image: linear-gradient(to top,#FFFFFF 44%, #ECE9E6 56%); }
 
+progress, progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 50px;
+  width: 100%; }
+
 .skill-lockup {
-  color: #999999;
-  margin: 0 auto 3.125em;
-  max-width: 780px;
-  text-align: center; }
+  list-style: none;
+  margin: 0;
+  padding: 1em; }
   .skill-lockup:after {
     content: "";
     display: table;
     clear: both; }
-  .skill-lockup .skill-unit {
-    padding-top: 1.5em; }
-  .skill-lockup .skill-icons {
-    font-size: 0;
-    margin: 0.1875em 0 1.875em; }
-    .skill-lockup .skill-icons .icon-twoDrops {
-      color: #996633;
-      display: inline-block;
-      font-family: "ammo";
-      font-size: 20px;
-      height: 20px;
-      width: 20px;
-      margin-right: 0.5em; }
-      .skill-lockup .skill-icons .icon-twoDrops:after {
-        content: "";
-        display: block;
-        font-size: 16px;
-        height: 16px;
-        width: 16px; }
 
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
-  color: #dedede; }
+.skill-unit {
+  border-radius: 25px;
+  float: left;
+  margin-bottom: 1em;
+  padding: 0 3%;
+  position: relative;
+  width: 44%; }
+  .skill-unit ::-webkit-progress-value {
+    -webkit-animation: bar-fill 16s;
+    width: 0; }
+  .skill-unit ::-webkit-progress-bar {
+    background-color: #dedede;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
 
-@media screen and (max-width: 541px) {
-  .skill-lockup {
-    width: 320px; }
-    .skill-lockup .skill-unit {
-      width: 320px; } }
+.skill-1::-webkit-progress-value::before {
+  color: #dedede;
+  content: "100%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-2::-webkit-progress-value::before {
+  color: #dedede;
+  content: "92%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-3::-webkit-progress-value::before {
+  color: #dedede;
+  content: "94%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-4::-webkit-progress-value::before {
+  color: #dedede;
+  content: "96%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-5::-webkit-progress-value::before {
+  color: #dedede;
+  content: "90%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-6::-webkit-progress-value::before {
+  color: #dedede;
+  content: "96%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-7::-webkit-progress-value::before {
+  color: #dedede;
+  content: "70%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+.skill-8::-webkit-progress-value::before {
+  color: #dedede;
+  content: "88%";
+  position: absolute;
+  left: 45%;
+  top: 60%; }
+
+[class^="skill-"]::-webkit-progress-value {
+  background: #996633;
+  border-radius: 25px; }
+
+[class^="skill-"]::-moz-progress-bar {
+  background: #996633; }
+
+@-webkit-keyframes bar-fill {
+  0% {
+    width: 0; } }
+@keyframes bar-fill {
+  0% {
+    width: 0; } }
 #creationsGroup {
   z-index: 4; }
 
